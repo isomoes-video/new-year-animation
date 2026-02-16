@@ -1198,6 +1198,23 @@ export const NewYearSummary: React.FC = () => {
           return Math.min(fadeIn, fadeOut);
         }}
       />
+      {/* Persistent author watermark */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 50,
+          right: 50,
+          zIndex: 100,
+          color: "rgba(255,255,255,0.4)",
+          fontSize: 42,
+          fontWeight: 700,
+          fontFamily: "'SF Pro Display', 'PingFang SC', sans-serif",
+          letterSpacing: 3,
+          pointerEvents: "none",
+        }}
+      >
+        @isomoes
+      </div>
       <TransitionSeries>
         <TransitionSeries.Sequence durationInFrames={SCENE_DURATIONS.intro}>
           <IntroScene />
