@@ -1,0 +1,26 @@
+{
+  "name": "new-year-animation",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "studio": "bunx remotion studio",
+    "render": "bunx remotion render NewYearSummary out/video.mp4",
+    "build": "bunx remotion render NewYearSummary out/video.mp4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.422",
+    "@remotion/cli": "^4.0.422",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.422"
+  }
+}
