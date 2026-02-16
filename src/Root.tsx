@@ -1,12 +1,12 @@
 import { Composition } from "remotion";
-import { NewYearSummary } from "./NewYearSummary";
+import { NewYearSummary, TOTAL_DURATION } from "./NewYearSummary";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <Composition
       id="NewYearSummary"
       component={NewYearSummary}
-      durationInFrames={300}
+      durationInFrames={TOTAL_DURATION}
       fps={30}
       width={1080}
       height={1920}
